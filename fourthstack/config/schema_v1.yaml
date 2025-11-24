@@ -1,0 +1,87 @@
+version: 1
+description: "Schema v1 for customer/credit dataset"
+fields:
+  age:
+    type: integer
+    min: 18
+    max: 70
+
+  occupation_type:
+    type: category
+    allowed:
+      - salaried
+      - self_employed
+      - student
+      - gig_worker
+
+  city_tier:
+    type: category
+    allowed: [1, 2, 3]
+
+  applied_credit_limit:
+    type: float
+    min: 1000
+    max: 1000000
+
+  income_bracket:
+    type: category
+    allowed:
+      - "0-3L"
+      - "3-6L"
+      - "6-12L"
+      - "12L+"
+
+  employment_status:
+    type: category
+    allowed:
+      - full_time
+      - part_time
+      - contract
+      - unemployed
+
+  loan_purpose:
+    type: category
+    allowed:
+      - shopping
+      - travel
+      - emergency
+      - bills
+
+  recent_credit_inquiries_6m:
+    type: integer
+    min: 0
+    max: 20
+
+  avg_bank_balance_range:
+    type: category
+    allowed:
+      - "0-10k"
+      - "10-50k"
+      - "50-200k"
+      - "200k+"
+
+  transaction_volatility:
+    type: float
+    min: 0
+    max: 5
+
+  spend_distribution_category:
+    type: category
+    allowed:
+      - essentials
+      - lifestyle
+      - mixed
+
+  internal_risk_score:
+    type: float
+    min: 0
+    max: 1
+
+  historical_pd_label:
+    type: float
+    min: 0
+    max: 1
+
+  delinquency_30_label:
+    type: integer
+    allowed: [0, 1]

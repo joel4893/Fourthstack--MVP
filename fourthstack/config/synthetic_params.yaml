@@ -1,0 +1,4 @@
+generator:
+  type: gan
+  params:
+    latent_dim: 128

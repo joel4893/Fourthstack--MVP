@@ -1,0 +1,3 @@
+age,occupation_type,city_tier,applied_credit_limit,income_bracket,employment_status,loan_purpose,recent_credit_inquiries_6m,avg_bank_balance_range,transaction_volatility,spend_distribution_category,internal_risk_score,historical_pd_label,delinquency_30_label
+25,salaried,1,150000,3-6L,full_time,shopping,1,10-50k,0.8,lifestyle,0.42,0.12,0
+32,self_employed,2,300000,6-12L,full_time,travel,3,50-200k,1.4,mixed,0.38,0.19,1
