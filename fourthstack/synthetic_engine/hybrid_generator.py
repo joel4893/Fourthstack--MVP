@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from .gan import Generator
+from .gan_model import Generator
 from .transformer_block import TransformerBlock
 from .diffusion_model import DiffusionModel
 
@@ -16,7 +16,7 @@ class HybridGenerator(nn.Module):
         super().__init__()
 
         # GAN generator: maps noise -> data vector
-        self.gan = Generator(noise_dim=noise_dim, output_dim=data_dim)
+        self.gan = Generator(input_dim=noise_dim, output_dim=data_dim)
 
         # Transformer expects (batch, seq_len, embed_dim) when batch_first=True
         self.transformer = TransformerBlock(embed_dim=data_dim, num_heads=4)
