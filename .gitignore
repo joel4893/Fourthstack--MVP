@@ -1,3 +1,7 @@
 .venv/
 google-cloud-cli-linux-x86_64.tar.gz
 google-cloud-sdk/
+
+# Python cache files
+__pycache__/
+*.pyc
